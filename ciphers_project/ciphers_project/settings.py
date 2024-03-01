@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-xq3)&79uxf1u0a)xz21e_^q(jn@9bpm2feuo*6xm1ffe48dpxh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost','0.0.0.0','ciphers-service-latest-4bip.onrender.com']
+ALLOWED_HOSTS = ['ciphers-service-latest-4bip.onrender.com']
 
 
 # Application definition
@@ -39,13 +39,11 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     'api.apps.ApiConfig',
     'rest_framework',
-    'corsheaders'
 ]
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
-    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -126,7 +124,4 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-CORS_ALLOWED_ORIGINS = [
-"https://snehamanohar23.github.io",
-"http://localhost:3000"
-]
+
